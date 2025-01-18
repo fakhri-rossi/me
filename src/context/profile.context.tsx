@@ -39,7 +39,6 @@ export interface ProfileType {
     github: string;
     email: string;
     linkedin: string;
-    phone: string;
   };
   skills: {
     category: string;
@@ -58,7 +57,6 @@ const profileContextDefault: ProfileType = {
     email: "",
     github: "",
     linkedin: "",
-    phone: "",
   },
   skills: [],
   projects: [],

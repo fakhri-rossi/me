@@ -2,7 +2,6 @@ import { MdEmail } from "react-icons/md";
 import MyText from "./MyText";
 import { ReactNode, useContext } from "react";
 import { ProfileContext, ProfileContextType } from "../context/profile.context";
-import { IoLogoWhatsapp } from "react-icons/io";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function FooterLink({
@@ -54,14 +53,6 @@ export default function Footer() {
             className="w-full md:w-[45%]"
           />
 
-          <FooterLink
-            icon={<IoLogoWhatsapp />}
-            value={profileData.contact.phone}
-            className="w-full md:w-[45%]"
-          />
-          {/* </div> */}
-
-          {/* <div className="flex gap-3"> */}
           <FooterLink
             icon={<FaLinkedin />}
             value={profileData.contact.linkedin}

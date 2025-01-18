@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { ProfileContext, ProfileContextType } from "../context/profile.context";
 import MyText from "../components/MyText";
 import { MdEmail } from "react-icons/md";
-import { IoLogoWhatsapp } from "react-icons/io";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Button from "../components/ui/Button";
 import ContactItem from "../components/layout/ContactItem";
@@ -105,13 +104,6 @@ export default function About() {
             icon={<MdEmail />}
             label="Email"
             value={profileData.contact.email}
-            className="w-full md:w-[45%]"
-          />
-
-          <ContactItem
-            icon={<IoLogoWhatsapp />}
-            label="Phone"
-            value={profileData.contact.phone}
             className="w-full md:w-[45%]"
           />
 

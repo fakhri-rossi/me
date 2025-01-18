@@ -11,7 +11,6 @@ export const UserProfile: ProfileType = {
     email: "rossifakhri@gmail.com",
     github: "github.com/fakhri-rossi",
     linkedin: "linkedin.com/in/fakhri-rossi",
-    phone: "+62-812-2429-1364",
   },
   skills: [
     {
