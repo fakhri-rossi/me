@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import { ProfileContextProvider } from "./context/profile.context";
 import ProjectDetail from "./pages/ProjectDetail";
+import NotFoundPage from "./pages/ErrorPage/NotFound";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -20,6 +21,8 @@ createRoot(document.getElementById("root")!).render(
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/:projectId" element={<ProjectDetail />} />
           </Route>
+
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </ProfileContextProvider>
     </BrowserRouter>
