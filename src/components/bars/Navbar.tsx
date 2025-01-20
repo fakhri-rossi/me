@@ -38,15 +38,13 @@ export default function Navbar() {
             to={item.to}
             end
             key={i}
-            className={`px-3 py-2 flex gap-2 items-center justify-center hover:text-black/50 ${
+            className={`px-3 py-2 flex gap-2 items-center justify-center hover:text-black/50 h-14 ${
               isActive && "border-b-2 border-solid border-black"
             }`}>
-            <p className="text-xl">{item.icon}</p>
+            <span className="text-2xl">{item.icon}</span>
 
             {isActive && (
-              <MyText
-                size="p"
-                className="font-medium hover:text-black/50 duration-100">
+              <MyText size="h4" className="font-medium">
                 {item.label}
               </MyText>
             )}
