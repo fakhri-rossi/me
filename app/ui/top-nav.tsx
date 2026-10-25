@@ -30,13 +30,16 @@ const links = [
 export default function TopNav() {
   const pathname = usePathname();
   return (
-    <div className='w-full flex justify-center gap-10 py-5 px-8 border-b border-white/8'>
-      {links.map((link) => (
-        <Link href={link.href}>
+    <div className='w-full flex justify-center gap-10 py-5 px-8 border-b border-gray-200 dark:border-white/10'>
+      {links.map((link, i) => (
+        <Link href={link.href} key={i}>
           <p
-            className={clsx('text-sm font-medium text-gray-400', {
-              'text-white': pathname === link.href,
-            })}
+            className={clsx(
+              'text-sm font-medium transition-colors',
+              pathname === link.href
+                ? 'text-black dark:text-white'
+                : 'text-gray-400 hover:text-black dark:text-white/70 dark:hover:text-white',
+            )}
           >
             {link.name}
           </p>
